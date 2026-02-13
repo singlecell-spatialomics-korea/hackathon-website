@@ -14,7 +14,7 @@
 
 <div
     class="bg-gray-900 text-white py-36"
-    style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), no-repeat center / cover url('/cau.png');"
+    style="background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), no-repeat center / cover url('/cau.jpg');"
 >
     <div class="container mx-auto text-center">
         <h1 class="text-3xl md:text-5xl font-bold mb-4">

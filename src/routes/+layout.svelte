@@ -16,18 +16,18 @@
 
 <Navbar let:hidden let:toggle>
     <NavBrand href="/">
-        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            SCSOK Hackathon
+        <img src="/scsok-logo.png" class="me-4 h-16 sm:h-20" alt="SCSOK Logo" />
+        <span class="self-center whitespace-nowrap text-xl sm:text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white">
+            Hackathon
         </span>
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {activeUrl} {hidden}>
-        <NavLi href="/">Main</NavLi>
+        <NavLi href="/hackathon/3">Latest Hackathon</NavLi>
         <NavLi class="cursor-pointer">
             Previous Hackathons<ChevronDownOutline class="w-6 h-6 ms-2 text-primary-800 dark:text-white inline" />
         </NavLi>
         <Dropdown class="w-56 z-20">
-            <DropdownItem href="/hackathon/3">3rd Hackathon (Feb 2026)</DropdownItem>
             <DropdownItem href="/hackathon/2">2nd Hackathon (Feb 2025)</DropdownItem>
             <DropdownItem href="/hackathon/1">1st Hackathon (Aug 2024)</DropdownItem>
         </Dropdown>
