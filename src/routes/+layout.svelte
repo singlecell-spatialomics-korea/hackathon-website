@@ -7,7 +7,10 @@
         NavLi,
         NavUl,
         NavHamburger,
+        Dropdown,
+        DropdownItem,
     } from "flowbite-svelte";
+    import { ChevronDownOutline } from "flowbite-svelte-icons";
     $: activeUrl = $page.url.pathname;
 </script>
 
@@ -20,7 +23,14 @@
     <NavHamburger on:click={toggle} />
     <NavUl {activeUrl} {hidden}>
         <NavLi href="/">Main</NavLi>
-        <NavLi href="/schedule">Schedule</NavLi>
+        <NavLi class="cursor-pointer">
+            Previous Hackathons<ChevronDownOutline class="w-6 h-6 ms-2 text-primary-800 dark:text-white inline" />
+        </NavLi>
+        <Dropdown class="w-56 z-20">
+            <DropdownItem href="/hackathon/3">3rd Hackathon (Feb 2026)</DropdownItem>
+            <DropdownItem href="/hackathon/2">2nd Hackathon (Feb 2025)</DropdownItem>
+            <DropdownItem href="/hackathon/1">1st Hackathon (Aug 2024)</DropdownItem>
+        </Dropdown>
     </NavUl>
 </Navbar>
 
@@ -31,7 +41,7 @@
 <footer class="bg-gray-900 text-white py-8">
     <div class="container mx-auto text-center">
         <p class="text-sm">
-            &copy; 2024 Single Cell & Spatial Omics Korea (SCSOK)
+            &copy; 2025 Single Cell & Spatial Omics Korea (SCSOK)
         </p>
     </div>
 </footer>

@@ -2,10 +2,31 @@
     import { Button, Heading } from "flowbite-svelte";
     import { CalendarMonthSolid, MapPinAltSolid } from "flowbite-svelte-icons";
 
-    const organizers = [
-        { name: "Junil Kim", affiliation: "Soongsil University" },
-        { name: "Jeongbin Park", affiliation: "Pusan National University" },
-        { name: "Heetak Lee", affiliation: "Institute for Basic Science" },
+    const hackathons = [
+        {
+            edition: "3rd",
+            title: "3rd Single Cell & Spatial Omics Hackathon",
+            subtitle: "Collaborate on Real Single-Cell and Spatial Omics Datasets",
+            date: "February 9 - 13, 2026",
+            location: "IBS Science Culture Center, Daejeon",
+            href: "/hackathon/3",
+        },
+        {
+            edition: "2nd",
+            title: "2nd Single Cell & Spatial Omics Hackathon",
+            subtitle: "Advancing Single-Cell and Spatial Omics Analysis",
+            date: "February 17 - 21, 2025",
+            location: "Chung-Ang University (DaVinci Campus), Anseong",
+            href: "/hackathon/2",
+        },
+        {
+            edition: "1st",
+            title: "1st Single Cell & Spatial Omics Hackathon",
+            subtitle: "Innovate in Single-Cell and Spatial Omics Data Analysis",
+            date: "August 19 - 22, 2024",
+            location: "Oceans and Fisheries HRD Institute, Gijang, Busan",
+            href: "/hackathon/1",
+        },
     ];
 </script>
 
@@ -15,10 +36,10 @@
 >
     <div class="container mx-auto text-center">
         <h1 class="text-3xl md:text-5xl font-bold mb-4">
-            1st Single Cell & Spatial Omics Hackathon
+            SCSOK Hackathon
         </h1>
         <p class="md:text-2xl mb-8">
-            Innovate in Single-Cell and Spatial Omics Data Analysis
+            Single Cell & Spatial Omics Korea Hackathon Series
         </p>
         <Button
             href="https://zulip.scsok.io"
@@ -31,213 +52,66 @@
 
 <div class="container mx-auto p-8 bg-white shadow-lg">
     <section id="about" class="mb-12">
-        <Heading tag="h2" class="text-3xl font-bold mb-4"
-            >About the Hackathon</Heading
-        >
+        <Heading tag="h2" class="text-3xl font-bold mb-4">About</Heading>
         <p class="mb-4">
-            Welcome to the 1st Single Cell & Spatial Omics Hackathon, to be held
-            at the Oceans and Fisheries HRD Institute in Gijang, Busan. This
-            exciting event will bring together experts, researchers, and data
-            scientists in Korea in a collaborative setting to innovate in the
-            fields of single-cell and spatial omics data analysis.
+            The SCSOK Hackathon series brings together experts, researchers, and
+            data scientists in Korea in a collaborative setting to innovate in the
+            fields of single-cell and spatial omics data analysis. Participants
+            work with peers, engage with real-world datasets, and develop
+            cutting-edge tools that provide deep insights into single-cell and
+            spatially resolved biological data.
         </p>
-        <p>
-            By joining this hackathon, you'll have the chance to work with
-            peers, engage with real-world datasets, and develop cutting-edge
-            tools that provide deep insights into single-cell and spatially
-            resolved biological data.
-        </p>
-        <div class="flex flex-col space-y-4 text-lg items-center mt-5">
-            <div class="flex items-center">
-                <CalendarMonthSolid class="w-6 h-6 mr-3 text-blue-600" />
-                <span
-                    ><strong>Date:</strong> August 19, 2024 - August 22, 2024</span
-                >
-            </div>
-            <div class="flex items-center">
-                <MapPinAltSolid class="w-6 h-6 mr-3 text-red-600" />
-                <span
-                    ><strong>Location:</strong> Oceans and Fisheries HRD Institute,
-                    Gijang, Busan</span
-                >
-            </div>
-        </div>
     </section>
 
-    <section id="agenda" class="mb-12">
-        <Heading tag="h2" class="text-3xl font-bold mb-6">Agenda</Heading>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-gray-50 p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-semibold mb-4">
-                    Spatial Transcriptomics
-                </h3>
-                <ul class="space-y-2">
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span
-                            >Cell segmentation of high resolution ST data (e.g.,
-                            Visium HD)</span
-                        >
-                    </li>
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span
-                            >Neighbor-specific alteration of gene expression</span
-                        >
-                    </li>
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span>Tissue territory/domain analysis</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span>Integration</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="bg-gray-50 p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-semibold mb-4">
-                    Single-cell Transcriptomics
-                </h3>
-                <ul class="space-y-2">
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span>Application of AI, e.g., GPTs</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span>Lineage tracing</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span>Sane method for HVG selection</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg
-                            class="w-6 h-6 mr-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 5l7 7-7 7"
-                            ></path></svg
-                        >
-                        <span>Genotype to phenotype inference</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="organizers" class="mb-12">
-        <Heading tag="h2" class="text-3xl font-bold mb-4"
-            >Organizing Committee</Heading
-        >
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {#each organizers as organizer}
-                <div class="p-4 bg-gray-50 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-2">
-                        {organizer.name}
-                    </h3>
-                    <p>{organizer.affiliation}</p>
-                </div>
+    <section id="hackathons" class="mb-12">
+        <Heading tag="h2" class="text-3xl font-bold mb-6">Hackathons</Heading>
+        <div class="grid gap-6">
+            {#each hackathons as hackathon}
+                <a href={hackathon.href} class="block group">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition-shadow border-l-4 border-blue-600">
+                        <h3 class="text-2xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                            {hackathon.title}
+                        </h3>
+                        <p class="text-gray-600 mb-4">{hackathon.subtitle}</p>
+                        <div class="flex flex-col sm:flex-row sm:space-x-8 space-y-2 sm:space-y-0 text-gray-700">
+                            <div class="flex items-center">
+                                <CalendarMonthSolid class="w-5 h-5 mr-2 text-blue-600" />
+                                <span>{hackathon.date}</span>
+                            </div>
+                            <div class="flex items-center">
+                                <MapPinAltSolid class="w-5 h-5 mr-2 text-red-600" />
+                                <span>{hackathon.location}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             {/each}
         </div>
     </section>
 
-    <section id="register">
-        <Heading tag="h2" class="text-3xl font-bold mb-4">Registration</Heading>
+    <section id="organizers" class="mb-12">
+        <Heading tag="h2" class="text-3xl font-bold mb-4">Organizing Committee</Heading>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-4 bg-gray-50 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Junil Kim</h3>
+                <p>Soongsil University</p>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Jeongbin Park</h3>
+                <p>Pusan National University</p>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Heetak Lee</h3>
+                <p>Institute for Basic Science</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <Heading tag="h2" class="text-3xl font-bold mb-4">Contact</Heading>
         <p class="mb-4">
-            Please note that this is an invitation-only event. If you are
-            interested, please reach out on the Zulip `hackathon` channel.
+            Interested in participating? This is an invitation-only event.
+            Please reach out on the Zulip <code>hackathon</code> channel.
         </p>
     </section>
 </div>
