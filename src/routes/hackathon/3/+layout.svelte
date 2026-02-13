@@ -24,10 +24,10 @@
             Collaborate on Real Single-Cell and Spatial Omics Datasets
         </p>
         <Button
-            href="https://events.kasra.kr/event/3"
+            href="https://zulip.scsok.io"
             target="_blank"
             size="xl"
-            color="blue"><b>Event Website</b></Button
+            color="blue"><b>Join SCSOK Zulip</b></Button
         >
     </div>
 </div>
