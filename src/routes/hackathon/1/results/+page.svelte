@@ -59,7 +59,28 @@
                     <!-- Team 1: Spatial Causality -->
                     <div id="spatial-causality" class="scroll-mt-4">
                         <h4 class="text-xl font-semibold mb-1">Spatial Causality</h4>
-                        <p class="text-sm text-gray-500 mb-3">Topic: Neighbor-specific alteration of gene expression</p>
+                        <p class="text-sm text-gray-500 mb-3">
+                            Jeonghwan Kim, Hyun Seo Lee, Seulki Lee, Hoebin Chung
+                            &middot; Topic: Neighbor-specific alteration of gene expression
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Explored spatial causality in spatial transcriptomics by adapting econometric causality frameworks to Visium HD data (P5 CRC dataset).
+                            To handle the computational cost of high-resolution VisiumHD, the team developed three strategies: grid selection (cropping informative
+                            regions with diverse cell type compositions via deconvolution), gene selection (focusing on ligand-receptor pairs and GO molecular
+                            function terms), and GPU acceleration using CUDA on an RTX A5000. These optimizations reduced execution time from 1 hour (single-core)
+                            to 5 minutes (multi-core) to 1 second (GPU), enabling scalable spatial causality analysis to identify neighbor-specific
+                            alterations of gene expression across cell types.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <figure>
+                                <img src="/results/1st/team1_slide8_img1.png" alt="Grid selection on VisiumHD CRC dataset" class="rounded-lg w-full" />
+                                <figcaption class="text-sm text-gray-500 mt-1 text-center">Grid selection: 4 crop regions with deconvolution labels</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/results/1st/team1_slide11_img1.png" alt="Ligand-receptor spatial expression analysis" class="rounded-lg w-full" />
+                                <figcaption class="text-sm text-gray-500 mt-1 text-center">Ligand-receptor spatial expression (APP, CD74)</figcaption>
+                            </figure>
+                        </div>
                     </div>
 
                     <hr class="border-gray-200" />
