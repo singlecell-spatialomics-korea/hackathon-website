@@ -189,6 +189,16 @@
                             Also applied SUPPA2 and SpliZ for splicing event analysis, proposing a workflow for spatial long-read
                             splicing analysis.
                         </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <figure>
+                                <img src="/results/3rd/team8_page7_img2.jpg" alt="Spatial distribution of top structural variants" class="rounded-lg w-full" />
+                                <figcaption class="text-sm text-gray-500 mt-1 text-center">Top 20 SVs by support mapped to tissue (INS, DUP, DEL, INV)</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/results/3rd/team8_page11_img3.jpg" alt="Myl6 isoform spatial expression" class="rounded-lg w-full" />
+                                <figcaption class="text-sm text-gray-500 mt-1 text-center">Myl6 isoform-specific spatial expression pattern</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </section>
